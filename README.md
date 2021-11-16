@@ -1,2 +1,2 @@
 # UI
-Repository with a different ui projects
+Repository with UI layouts
