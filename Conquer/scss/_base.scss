@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $default-font-size;
+
+    @media (max-width: $big-screen) {
+        font-size: $big-screen-font-size;
+    }
+
+    @media (max-width: $medium-screen) {
+        font-size: $medium-screen-font-size;
+    }
+
+    @media (max-width: $medium-small-screen) {
+        font-size: $medium-small-screen-font-size;
+    }
+
+    @media (max-width: $mobile-screen) {
+        font-size: $mobile-screen-font-size;
+    }
+ }
+
+body {
+    font-family: $default-font-family;
+    font-weight: $default-font-weight;
+}
