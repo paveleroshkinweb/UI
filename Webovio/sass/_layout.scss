@@ -1,0 +1,211 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url('../img/hero-bg.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-nav {
+        margin-bottom: 7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-body {
+        max-width: 70rem;
+    }
+
+    &-body-title {
+        font-size: 6rem;
+        font-weight: 900;
+        color: #fff;
+    }
+
+    &-body-subtitle, &-body-description {
+        color: $color-white-light;
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+
+    &-link {
+        display: inline-block;
+        margin-top: 4rem;
+    }
+
+    &-container {
+        padding: 2rem 0 8rem;
+    }
+}
+
+.services {
+    padding: 15rem 0 10rem;
+
+    &-title {
+        width: 70%;
+        font-size: 4rem;
+    }
+
+    &-body {
+        margin-top: 7rem;
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: $screen-medium) {
+            flex-direction: column;
+        }
+    }   
+
+    &-item:not(:first-of-type) &-link {
+        color: $color-grey;
+    }
+
+    &-item {
+        flex: 1;
+        display: flex;
+        background-color: $color-white-light;
+        border-radius: 10px;
+        padding: 2rem;
+        flex-direction: column;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+
+        @media only screen and (max-width: $screen-medium) {
+            margin-right: 0 !important;
+            
+            &:not(:first-child) {
+                margin-top: 5rem;
+            }
+        }
+    }
+
+    &-subtitle {
+        color: $color-green-dark;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+    }
+
+    &-description {
+        font-size: 1.5rem;
+        line-height: 1.8;
+        padding-bottom: 2rem;
+    }
+
+    &-link {
+        margin-bottom: 0;
+        margin-top: auto;
+        align-self: flex-start;
+    }
+}
+
+.get-started {
+    position: relative;
+    top: 10rem;
+    padding: 16rem 13rem;
+    width: 88%;
+    background-color: $color-white-light;
+    box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
+
+    &-title {
+        font-size: 5rem;
+        margin-bottom: 3rem;
+    }
+    
+    &-link {
+        color: $color-grey;
+    }
+}
+
+.footer {
+    background-image: url('../img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20rem 0 3rem;
+
+    &-top {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 5rem;
+        border-bottom: 1px solid $color-grey;
+    }
+
+    &-contacts-item {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+
+        &:not(:last-child) {
+            margin-right: 10rem;
+        }
+    }
+
+    &-contacts-text {
+        color: $color-white-light;
+        font-size: 1.7rem;
+        margin-bottom: 1.8rem;
+    }
+
+    &-contacts-value {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 800;
+        font-size: 1.3rem;
+    }
+
+    &-middle {
+        margin-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 5rem;
+        border-bottom: 1px solid $color-grey;
+    }
+
+    &-column {
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+    &-column-title {
+        color: #fff;
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+
+    &-column-list {
+        list-style: none;
+    }
+
+    &-column-item {
+
+    }
+
+    &-column-link {
+        display: inline-block;
+        padding: 1rem 0;
+        text-decoration: none;
+        color: $color-white-light;
+        font-size: 1.3rem;
+        transition: all .1s;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+            border-bottom: 1px solid #fff;
+        }
+    }
+
+    &-bottom {
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
